@@ -1,3 +1,4 @@
+import Erlan from "./Erlan";
 import NewBtn from "./NewBtn";
 import Person from "./Person";
 
@@ -14,7 +15,7 @@ let cars = {
 function App() {
   return (
     <div className="App">
-      <Person a="Ivan" b="25" t={cars.type} m={cars.model} n={cars.number}/>
+     <Erlan/>
     </div>
   );
 }
