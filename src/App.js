@@ -1,3 +1,4 @@
+import BegimayS6900 from "./BegimayS6900";
 import NewBtn from "./NewBtn";
 import Person from "./Person";
 
@@ -15,6 +16,8 @@ function App() {
   return (
     <div className="App">
       <Person a="Ivan" b="25" t={cars.type} m={cars.model} n={cars.number}/>
+      <hr/>
+      <BegimayS6900/>
     </div>
   );
 }
