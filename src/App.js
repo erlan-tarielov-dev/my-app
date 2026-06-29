@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import NewBtn from "./NewBtn";
+import Person from "./Person";
+
+//Props это передача данных от родительского компонента к дочернему
+
+let cars = {
+  type: 'Lexus',
+  model: 'GX 470',
+  number: 'KG 01 ABN 001'
+
+}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person a="Ivan" b="25" t={cars.type} m={cars.model} n={cars.number}/>
     </div>
   );
 }
